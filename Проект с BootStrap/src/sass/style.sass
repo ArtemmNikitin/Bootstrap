@@ -1,6 +1,24 @@
 *
 	font-family: 'Roboto', sans-serif
 
+.title
+	width: 113px
+	height: 24px
+	font-weight: 400
+	font-size: 11px
+	line-height: 25px
+	text-align: center
+	text-transform: uppercase
+	color: #FFFFFF
+	background-color: black
+
+.subtitle
+	font-weight: 700
+	text-align: center
+	text-transform: uppercase
+	color: #222222
+	font-size: 38px
+
 nav
 	position: fixed
 	top: 0
@@ -139,29 +157,17 @@ nav
 			text-decoration: underline
 
 .advantages
-	.advantages__title
-		width: 113px
-		height: 24px
-		font-weight: 400
-		font-size: 11px
-		line-height: 25px
-		text-align: center
-		text-transform: uppercase
-		color: #FFFFFF
-		background-color: black
+	&__title
 		margin: 18px auto 0 auto
+		&.title
 
-	.advantages__subtitle
-		font-weight: 700
-		text-align: center
-		text-transform: uppercase
-		color: #222222
-		font-size: 38px
+	&__subtitle
 		margin-top: 33px
+		&.subtitle
 
-	.card-wrapper
-		display: flex
-		flex-wrap: wrap
+.card-wrapper
+	display: flex
+	flex-wrap: wrap
 
 	.card
 		display: flex
@@ -196,3 +202,12 @@ nav
 
 	.card__text-wrapper
 		max-width: 371px
+
+.mobile-app
+	&__title
+		margin: 110px auto 0 auto
+		&.title
+
+	&__subtitle
+		margin-top: 33px
+		&.subtitle
