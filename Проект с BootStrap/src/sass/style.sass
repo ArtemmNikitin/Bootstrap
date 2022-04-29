@@ -1,7 +1,14 @@
 *
 	font-family: 'Roboto', sans-serif
 
-$color_1: #1EACC7
+$color_1: rgba(30, 172, 199, 1)
+
+$color_2: rgba(255, 86, 86, 1)
+
+=button_hover
+	&:hover
+		background: none
+		background-color: $color_1
 
 header
 	position: relative
@@ -117,6 +124,7 @@ nav
 		color: #FFFFFF
 		text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21)
 		border: none
+		+button_hover
 
 		&:hover
 			text-decoration: underline
@@ -164,6 +172,7 @@ nav
 		font-weight: 400
 		line-height: 24px
 		font-size: 18px
+		+button_hover
 
 	a
 		text-decoration: none
