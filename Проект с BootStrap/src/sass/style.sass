@@ -2,8 +2,7 @@
 	font-family: 'Roboto', sans-serif
 
 $color_1: rgba(30, 172, 199, 1)
-
-$color_2: rgba(255, 86, 86, 1)
+$color_2: #FF5656
 
 =button_hover
 	&:hover
@@ -294,6 +293,26 @@ nav
 		margin: 0 auto
 		transform: translateX(-50%)
 		bottom: 35px
+		cursor: pointer
+		&:before
+			content: ''
+			display: block
+			width: 14px
+			height: 2px
+			background-color: $color_1
+
+		&:after
+			content: ''
+			display: block
+			position: absolute
+			width: 2px
+			height: 14px
+			background-color: $color_1
+			left: 50%
+			transform: translateX(-50%)
+		&:hover
+			&:before,&:after
+				background-color: $color_2
 
 		img
 			min-width: 14px
