@@ -452,3 +452,81 @@ nav
 			text-decoration: none
 			&:hover
 				text-decoration: underline
+
+.footer
+	position: relative
+	height: 155px
+	a
+		text-decoration: none
+
+	&__separator
+		width: 299px
+		height: 4px
+		background: $color_1
+		margin: 13px auto 0 auto
+
+	&__wrapper
+		display: flex
+		justify-content: space-between
+		padding-top: 32px
+
+	&__wrapper > div
+		width: 33%
+		&:nth-child(3)
+			display: flex
+			justify-content: flex-end
+
+	&__links
+		display: flex
+		justify-content: space-between
+		.center-of-menu
+			margin-left: 25px
+		a
+			font-weight: 300
+			font-size: 15px
+			text-transform: uppercase
+			color: #070716
+
+	&__second-menu
+		display: flex
+		justify-content: space-between
+		a
+			font-weight: 300
+			font-size: 11px
+			margin-top: 25px
+			text-transform: uppercase
+			color: #999999
+
+	.social-networks
+		display: flex
+		justify-content: start
+		width: 160px
+
+		.social-network
+			width: 35px
+			height: 35px
+			background: #070716
+			border-radius: 100%
+			display: flex
+			align-items: center
+			justify-content: center
+			margin-left: 4px
+
+	.app-stores
+		display: flex
+		justify-content: end
+		div
+			width: 94px
+			hight: 27px
+
+	.lang-switcher
+		position: absolute
+		display: block
+		text-transform: uppercase
+		font-weight: 400
+		font-size: 11px
+		color: $color_1
+		bottom: 23px
+		left: 50%
+		transform: translateX(-50%)
+		margin-top: 35px
