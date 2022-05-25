@@ -1,0 +1,227 @@
+*{
+	font-family: 'Roboto', sans-serif;
+}
+
+nav {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 50px;
+	background: #212121;
+}
+
+.menu{
+	display: flex;
+	justify-content: space-between;
+	padding: 13px 70px;
+	list-style-type: none;
+	margin: 0;
+}
+
+.menu .menu__link{
+	color: white;
+	font-weight: 300;
+	font-size: 15px;
+	text-decoration: none;
+}
+
+.menu .menu__link:hover{
+	text-decoration: underline;
+}
+
+.menu .menu__item:not(:last-child){
+	border-right: 2px dotted black;
+	padding-right: 28px;
+}
+
+.subheader{
+	position: fixed;
+	top: 50px;
+	width: 100%;
+	height: 84px;
+	background:rgba(0, 0, 0, .6);
+	color: white;
+}
+
+.subheader .subheader__logo{
+	display: block;
+	max-width: 100%;
+	margin-top: 16px;
+}
+
+.subheader .subheader__official {
+	font-weight: 100;
+	align-items: center;
+	font-size: 13px;
+	opacity: 0.5;
+	margin-top: 6px;
+}
+
+.subheader .subheader__call {
+	font-weight: 300;
+	font-size: 12px;
+	line-height: 12px;
+	text-align: right;
+	margin-top: 19px;
+}
+.subheader .subheader__phone {
+	display: block;
+	font-weight: 400;
+	font-size: 22px;
+	text-align: right;
+	margin-top: 8px;
+}
+
+.subheader .col-md-2 a{
+	color:inherit;
+	text-decoration: none;
+}
+
+.subheader .col-md-2 a:hover{
+	text-decoration: underline;
+}
+
+.subheader .subheader__button{
+	width: 172px;
+	height: 46px;
+	background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%);
+	box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.12);
+	border-radius: 4px;
+	text-align: center;
+	margin-top: 19px;
+
+	font-weight: 400;
+	font-size: 14px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
+	border: none;
+}
+
+.subheader .subheader__button:hover {
+	text-decoration: underline;
+}
+
+.promo{
+	background: url('../img/uber_bg.jpg') center center/cover no-repeat;
+	min-height: 800px;
+	padding: 150px 0 135px 0;
+	color: white;
+}
+
+.promo .promo__title {
+	font-weight: 900;
+	line-height: 24px;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 60px;
+	line-height: 60px;
+	margin-bottom: 0;
+}
+
+.promo .promo__subtitle {
+	font-weight: 700;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 36px;
+	line-height: 36px;
+	margin-top: 10px;
+}
+.promo .promo__text {
+	font-weight: 400;
+	line-height: 24px;
+	text-align: center;
+	font-size: 18px;
+	margin-top: 23px;
+}
+
+.promo .promo__btn {
+	display: block;
+	width: 259px;
+	height: 63px;
+	background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%);
+	box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.12);
+	border-radius: 4px;
+	margin: 115px auto 0 auto;
+	color: white;
+	border: none;
+	font-weight: 400;
+	line-height: 24px;
+	font-size: 18px;
+}
+
+.promo .promo__btn a{
+	text-decoration: none;
+	color: white;
+}
+
+.promo .promo__btn a:hover {
+	text-decoration: underline;
+}
+
+.advantages .advantages__title {
+	width: 113px;
+	height: 24px;
+	font-weight: 400;
+	font-size: 11px;
+	line-height: 25px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	background-color: black;
+	margin: 18px auto 0 auto;
+}
+
+.advantages .advantages__subtitle {
+	font-weight: 700;
+	text-align: center;
+	text-transform: uppercase;
+	color: #222222;
+	font-size: 38px;
+	margin-top: 33px;
+}
+
+.advantages .card-wrapper{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.advantages .card {
+	display: flex;
+	margin-top: 26px;
+}
+
+.advantages .card__icon-wrapper {
+	position: relative;
+	height: 116px;
+	min-width: 116px;
+	background: #1EACC7;
+	border-radius:50%;
+	margin: 0 26px 0 35px;
+}
+
+.advantages .card__icon {
+	width: 80px;
+	height: 66px;
+	position:absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%)
+}
+
+.advantages .card__title {
+	font-weight: 400;
+	font-size: 17px;
+	line-height: 21px;
+	color: #1EACC7;
+}
+
+.advantages .card__text {
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 21px;
+}
+
+.advantages .card__text-wrapper {
+	max-width: 371px;
+}
