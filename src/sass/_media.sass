@@ -24,7 +24,7 @@
 		.footer__wrapper
 			.wrapper
 				.center-of-menu
-					margin-left: 5px
+					margin-left: 25px
 				.footer__links
 					a
 						font-size: 14px
@@ -42,8 +42,6 @@
 			justify-content: space-between
 			padding-top: 15px
 			.wrapper
-				.center-of-menu
-					margin-left: 0
 				.footer__second-menu
 					justify-content: space-evenly
 					.footer__support-senter
@@ -90,10 +88,32 @@
 		.footer__wrapper
 			padding-top: 10px
 
-@media (max-width: 900px)
+@media (max-width: 950px)
 	.footer
+		min-height: 255px
+		&__wrapper>div:nth-child(3)
+			justify-content: center
+			margin-top: 19px
+			width: 100%
+			.app-stores
+				width: 100%
+				justify-content: center
+		&__wrapper
+			justify-content: center
 		&__wrapper > div
-			width: 95%
+			width: 80%
+			align-items: center
+			justify-content: center
+		.social-networks
+			margin-top: 38px
+			max-width: 100%
+			display: flex
+			justify-content: center
+		.footer__menu
+			order: -1
+		.lang-switcher
+			bottom: 157px
+
 		&__wrapper
 			display: flex
 			flex-direction: column
@@ -219,6 +239,18 @@
 		&__text
 			font-size: 14px
 
+@media (max-width: 482px)
+	.footer
+		&__wrapper > div
+			width: 100%
+			align-items: center
+			justify-content: center
+			padding: 10px 5px
+		&__wrapper
+			padding: 10px 5px
+		.lang-switcher
+			bottom: 130px
+
 @media (max-width: 425px)
 	header
 		height: 30px
@@ -328,8 +360,9 @@
 			.map__wrapper
 				height: 360px
 				padding-top: 24px
-				.bootstpap-colomns
+				.content-wrapper
 					padding: 0
+					width: 100%
 					.subtitle
 						font-size: 16px
 						margin-top: 14px
@@ -340,7 +373,23 @@
 	.footer
 		&__separator
 			margin: 25px auto 0 auto
+			width: 80%
+		.wrapper
+			padding: 0
+			margin: 0
+		.app-stores
+			margin-top: 0
+			padding-top: 0
+		.social-networks
+			padding-top: 19px
+			margin-top: 16px
+		.lang-switcher
+			bottom: 157px
 
+@media (max-width: 357px)
+	.footer
+		.lang-switcher
+			bottom: 134px
 @media (max-width: 320px)
 	header
 		.menu
